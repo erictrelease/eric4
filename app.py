@@ -4,3 +4,5 @@ import plotly.express
 
 
 df = pd.read_csv('vehicles_us.csv')
+
+print('eric is cool')
