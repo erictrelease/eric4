@@ -41,7 +41,7 @@ st.write('Vehicles listed as "new" sold 2 days sooner on average.')
 # Remove outliers based on price
 price_typeh = df[df['price']<50000]
 # Histogram for price and type of vehicles
-pt_hist = px.histogram(price_typeh, x='price', color = 'type', title='Price of vehicle', nbins=50, opacity=0.7)
+pt_hist = px.histogram(price_typeh, x='price', color = 'type', title='Price of vehicle based on type', nbins=50, opacity=0.7)
 st.write(pt_hist)
 
 # Explore df based on price and condition of vehicle
