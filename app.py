@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.title('Investigating how parameters affect the sale price for vehicles sold in the US between May 2018 and April 2014')
+st.title('Investigating how parameters affect the sale price for vehicles sold in the US between May 2018 and April 2019')
 
 df = pd.read_csv('vehicles_us.csv')
 
@@ -57,11 +57,13 @@ if check:
 
 if check1:
     st.write(odo_plot)
+    st.write('There is an inverse relationship between sale price and miles on the odometer.')
 
 if check2:
     st.write(pc_hist)
     st.write(dc_bar)
     st.write('Vehicles listed as "new" sold 2 days sooner on average.')
+    st.write('Almost half of the vehicles (48%) were listed in "excellent" condition.')
 
 if check3:
     st.write(pt_hist)
